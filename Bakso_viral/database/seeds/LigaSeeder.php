@@ -13,27 +13,15 @@ class LigaSeeder extends Seeder
     public function run()
     {
         DB::table('ligas')->insert([
-        	'nama' => 'Bundes Liga',
-        	'negara' => 'Jerman',
-        	'gambar' => 'bundesliga.png',
+        	'nama' => 'Makanan',
+        	'kategori' => 'Makanan',
+        	'gambar' => 'makanan.png',
         ]);
 
         DB::table('ligas')->insert([
-        	'nama' => 'Premier League',
-        	'negara' => 'Inggris',
-        	'gambar' => 'premierleague.png',
-        ]);
-
-        DB::table('ligas')->insert([
-        	'nama' => 'La Liga',
-        	'negara' => 'Spanyol',
-        	'gambar' => 'laliga.png',
-        ]);
-
-        DB::table('ligas')->insert([
-        	'nama' => 'Serie A',
-        	'negara' => 'Itali',
-        	'gambar' => 'seriea.png',
+        	'nama' => 'Minuman',
+        	'kategori' => 'Minuman',
+        	'gambar' => 'minuman.png',
         ]);
     }
 }
