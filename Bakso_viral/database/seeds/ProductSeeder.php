@@ -13,75 +13,76 @@ class ProductSeeder extends Seeder
     public function run()
     {
         DB::table('products')->insert([
-        	'nama' => 'CHELSEA 3RD 2018-2019',
-            'liga_id' => 2,
-            'gambar' => 'chelsea.png'
-        ]);
-
-        DB::table('products')->insert([
-        	'nama' => 'LEICESTER CITY HOME 2018-2019',
-            'liga_id' => 2,
-            'gambar' => 'leicester.png'
-        ]);
-
-        DB::table('products')->insert([
-        	'nama' => 'MAN. UNITED AWAY 2018-2019',
-            'liga_id' => 2,
-            'gambar' => 'mu.png'
-        ]);
-
-        DB::table('products')->insert([
-        	'nama' => 'LIVERPOOL AWAY 2018-2019',
-            'liga_id' => 2,
-            'gambar' => 'liverpool.png'
-        ]);
-
-        DB::table('products')->insert([
-        	'nama' => 'TOTTENHAM 3RD 2018-2019',
-            'liga_id' => 2,
-            'gambar' => 'tottenham.png'
-        ]);
-
-        DB::table('products')->insert([
-        	'nama' => 'DORTMUND AWAY 2018-2019',
+        	'nama' => 'bakso tetelan',
             'liga_id' => 1,
-            'gambar' => 'dortmund.png'
+            'gambar' => 'tetelan.png'
         ]);
 
         DB::table('products')->insert([
-        	'nama' => 'BAYERN MUNCHEN 3RD 2018 2019',
+        	'nama' => 'bakso telur',
             'liga_id' => 1,
-            'gambar' => 'munchen.png'
+            'gambar' => 'telur.png'
         ]);
 
         DB::table('products')->insert([
-        	'nama' => 'JUVENTUS AWAY 2018-2019',
-            'liga_id' => 4,
-            'gambar' => 'juve.png'
+        	'nama' => 'bakso kasar',
+            'liga_id' => 1,
+            'gambar' => 'kasar.png'
         ]);
 
         DB::table('products')->insert([
-        	'nama' => 'AS ROMA HOME 2018-2019',
-            'liga_id' => 4,
-            'gambar' => 'asroma.png'
+        	'nama' => 'bakso alus',
+            'liga_id' => 1,
+            'gambar' => 'alus.png'
+        ]);
+
+
+        DB::table('products')->insert([
+        	'nama' => 'bakso judes',
+            'liga_id' => 1,
+            'gambar' => 'judes.png'
         ]);
 
         DB::table('products')->insert([
-        	'nama' => 'AC MILAN HOME 2018 2019',
-            'liga_id' => 4,
-            'gambar' => 'acmilan.png'
+        	'nama' => 'bakso masker',
+            'liga_id' => 1,
+            'gambar' => 'masker.png'
         ]);
 
         DB::table('products')->insert([
-        	'nama' => 'LAZIO HOME 2018-2019',
-            'liga_id' => 4,
-            'gambar' => 'lazio.png'
+        	'nama' => 'bakso positif',
+            'liga_id' => 1,
+            'gambar' => 'positif.png'
         ]);
 
         DB::table('products')->insert([
-        	'nama' => 'REAL MADRID 3RD 2018-2019',
-            'liga_id' => 3,
-            'gambar' => 'madrid.png'
+        	'nama' => 'bakso swab',
+            'liga_id' => 1,
+            'gambar' => 'swab.png'
+        ]);
+
+        DB::table('products')->insert([
+        	'nama' => 'bakso corona',
+            'liga_id' => 1,
+            'gambar' => 'corona.png'
+        ]);
+
+        DB::table('products')->insert([
+        	'nama' => 'es teh',
+            'liga_id' => 2,
+            'gambar' => 'teh.png'
+        ]);
+
+        DB::table('products')->insert([
+        	'nama' => 'es jeruk',
+            'liga_id' => 2,
+            'gambar' => 'jeruk.png'
+        ]);
+
+        DB::table('products')->insert([
+        	'nama' => 'es milo',
+            'liga_id' => 2,
+            'gambar' => 'milo.png'
         ]);
     }
 }
