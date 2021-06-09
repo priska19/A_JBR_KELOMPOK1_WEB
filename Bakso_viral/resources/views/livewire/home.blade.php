@@ -2,7 +2,7 @@
 
    {{-- BANNER --}}
    <div class="banner">
-      <img src="{{ url('assets/slider/slider1.png') }}" alt="">
+      <img src="{{ url('assets/slider/slider2.png') }}" alt="">
    </div>
 
    {{-- PILIH KATEGORI MENU  --}}
