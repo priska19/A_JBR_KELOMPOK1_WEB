@@ -4,7 +4,7 @@
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="{{ route('home') }}" class="text-dark">Home</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">List Jersey</li>
+                    <li class="breadcrumb-item active" aria-current="page">List Menu</li>
                 </ol>
             </nav>
         </div>

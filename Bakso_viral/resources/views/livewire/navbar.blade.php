@@ -18,7 +18,7 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            List Jersey
+                            List Menu
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             @foreach($ligas as $liga)
@@ -26,11 +26,8 @@
                                 href="{{ route('products.liga', $liga->id) }}">{{ $liga->nama }}</a>
                             @endforeach
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="{{ route('products') }}">Semua Liga</a>
+                            <a class="dropdown-item" href="{{ route('products') }}">Semua Menu</a>
                         </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ route('history') }}">History</a>
                     </li>
                 </ul>
 
@@ -38,8 +35,7 @@
                 <ul class="navbar-nav ml-auto">
                     <!-- Authentication Links -->
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('keranjang') }}">
-                            Keranjang <i class="fas fa-shopping-bag"></i>
+                        
                             @if($jumlah_pesanan !==0)
                             <span class="badge badge-danger">{{ $jumlah_pesanan }}</span>
                             @endif

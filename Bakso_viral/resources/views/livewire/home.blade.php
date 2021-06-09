@@ -23,7 +23,7 @@
       </div>
    </section>
 
-   {{-- FAVORIT MENU  --}}
+   {{-- FAVORIT MENU   --}}
    <section class="products mt-5 mb-5">
       <h3>
          <strong>FAVORIT MENU</strong>
