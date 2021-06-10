@@ -82,46 +82,7 @@
                         </tr>
                         @if($jumlah_pesanan > 1)
                         @else
-                        <tr>
-                            <td colspan="3"><strong>Name Set (isi jika tambah nameset)</strong> </td>
-                        </tr>
-                        <tr>
-                            <td>Harga Name Set</td>
-                            <td>:</td>
-                            <td>Rp. {{ number_format($product->harga_nameset) }}</td>
-                        </tr>
-                        <tr>
-                            <td>Nama</td>
-                            <td>:</td>
-                            <td>
-                                <input id="nama" type="text"
-                                    class="form-control @error('nama') is-invalid @enderror"
-                                    wire:model="nama" value="{{ old('nama') }}"
-                                    autocomplete="name" autofocus>
-
-                                @error('nama')
-                                <span class="invalid-feedback" role="alert">
-                                    <strong>{{ $message }}</strong>
-                                </span>
-                                @enderror
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Nomor</td>
-                            <td>:</td>
-                            <td>
-                                <input id="nomor" type="number"
-                                    class="form-control @error('nomor') is-invalid @enderror"
-                                    wire:model="nomor" value="{{ old('nomor') }}"
-                                    autocomplete="name" autofocus>
-
-                                @error('nomor')
-                                <span class="invalid-feedback" role="alert">
-                                    <strong>{{ $message }}</strong>
-                                </span>
-                                @enderror
-                            </td>
-                        </tr>
+                       
                         @endif
                         <tr>
                             <td colspan="3">

@@ -36,7 +36,7 @@
                 <img class="mr-3" src="{{ url('assets/bri.png') }}" alt="Bank BRI" width="60">
                 <div class="media-body">
                     <h5 class="mt-0">BANK BRI</h5>
-                    No. Rekening 012345-678-910 atas nama <strong>Muhammad Afifuddin</strong>
+                    No. Rekening 012345-678-910 atas nama <strong>MAS BAY </strong>
                 </div>
             </div>
         </div>
