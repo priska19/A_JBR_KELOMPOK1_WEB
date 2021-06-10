@@ -2,7 +2,7 @@
 
    {{-- BANNER --}}
    <div class="banner">
-      <img src="{{ url('assets/slider/slider1.png') }}" alt="">
+      <img src="{{ url('assets/slider/slider2.png') }}" alt="">
    </div>
 
    {{-- PILIH KATEGORI MENU  --}}
@@ -23,7 +23,7 @@
       </div>
    </section>
 
-   {{-- FAVORIT MENU  --}}
+   {{-- FAVORIT MENU   --}}
    <section class="products mt-5 mb-5">
       <h3>
          <strong>FAVORIT MENU</strong>
