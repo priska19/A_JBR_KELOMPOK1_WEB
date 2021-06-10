@@ -23,7 +23,9 @@ Route::livewire('/keranjang', 'keranjang')->name('keranjang');
 Route::livewire('/checkout', 'checkout')->name('checkout');
 Route::livewire('/history', 'history')->name('history');
 
-Route::group(['namespace' => 'Backend'], function ()
+Route::group(['namespace' => 'Backend'], function()
 {
-    Route::resource('dashboard', 'DashboardController');
+    Route::resource('dashboard','DashboardController');
+    Route::resource('pendidikan', 'PendidikanController');
+    Route::resource('pengalaman_kerja', 'PengalamanKerjaController');
 });
