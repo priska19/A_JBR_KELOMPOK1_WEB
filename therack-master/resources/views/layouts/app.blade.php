@@ -7,7 +7,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>{{ config('app.name', 'Bakso Viral Jember') }}</title>
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -28,7 +28,7 @@
                 <a class="navbar-brand" href="{{ url('/') }}">
                     <div class="d-flex">
                         <div><img src="{{ asset('photo/box.svg') }}" style="height:50px;" alt=""></div>
-                        <div class="pl-3 ml-3 pt-2" style="border-left:1px solid rgba(0, 0, 0, 0.5); font-size:1.5rem;">{{ config('app.name', 'Laravel') }}</div>
+                        <div class="pl-3 ml-3 pt-2" style="border-left:1px solid rgba(0, 0, 0, 0.5); font-size:1.5rem;">{{ config('app.name', 'Bakso Viral Jember') }}</div>
                     </div>
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
@@ -102,43 +102,20 @@
             <div class='container p-0 pt-3'>
                 <div class='row'>
                     <div class='col-md-4 col-sm-12 pt-3'>
-                        <h3>Contact Information</h3>
-                        <p>Endah Promenade <br> Bukit Jalil <br> +123456789 <br> customercare@therack.com</p>
+                        <h3>More Information</h3>
+                        <p>Warung Bakso Viral Jember <br> Jember <br> 0856 4665 4672 <br> baksoviraljember@yahoo.com</p>
                     </div>
                     <div class='col-md-4 col-sm-12 pt-3'>
                         <h3>Follow Us On</h3>
                         <ul>
                             <li><a href='https://facebook.com/' target='_blank'>
-                                <i class="fa fa-instagram"></i></a></li>
+                                <i class="fa fa-facebook"></i></a></li>
                             <li><a href='https://instagram.com/' target='_blank'>
-                                <i class="fa fa-facebook"></i></a>
+                                <i class="fa fa-instagram"></i></a>
                             </li>
                         </ul>
-
+                        <img class='logo' src="{{ asset('photo/logo.png') }}">
                     </div>
-                    <div class='col-md-4 col-sm-12 pt-3'>
-                        <h3>Newsletter</h3>
-                        <p>Sign up for our newsletter.</p>
-                        <div class='newsletter-form p-0'>
-                            <form action='{{ route('newsletter.add') }}' method='post' id='newsletter-validate-detail'>
-                                @csrf
-                                <input type='email' name='email' id='newsletter-footer' class=''
-                                    placeholder='Enter your email'>
-                                <button type='submit' id='signup-newsletter-footer' class='button'>SIGN UP</button>
-                            </form>
-                        </div>
-                    </div>
-                    <div class='col-12 divider-footer p-0'>
-                    </div>
-                    <div class='col-md-6 col-sm-12 copyright'>
-                        <p>Designed from scratch by Sherwin Variancia</p>
-                        <p>therack &copy; 2019. All Rights Reserved</p>
-                    </div>
-                    <div class='col-md-6 col-sm-12 payment'> <img src="{{ asset('photo/cards.png') }}" alt=''>
-                    </div>
-                    <div class='col-12 p-0 mt-3'>
-                    </div>
-
                 </div>
             </div>
         </div>
