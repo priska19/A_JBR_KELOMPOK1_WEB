@@ -57,7 +57,7 @@
           <a href="{{ route('product.show',['product'=>$product->id]) }}">
             <div class="card-body ">
               <div class="product-info">
-                <div class="info-1"><img src="{{ asset('/storage/'.$product->image) }}" alt=""></div>
+                <div class="info-1"><img src="{{ asset('photo') }}/{{ $product->gambar }}" alt=""></div>
                 <div class="info-4"><h5>{{ $product->brand }}</h5></div>
                 <div class="info-2"><a href="product/{{ $product->id }}"><h4>{{ $product->name }}</h4></a></div>
                 <div class="info-3"><h5>Rp.{{ $product->price }}</h5></div>
@@ -71,19 +71,19 @@
     <!-- FEATURED SHOES [E]-->
 
     <!-- ADVANTAGE [S]-->
-    <h2 class="pt-4">OUR PROMISE'S</h2>
+    <h2 class="pt-4">KEUNGGULAN WARUNG BAKSO VIRAL JEMBER</h2>
     <div class="row m-0 pt-4">
       <div class="col-lg-4 col-sm-12 d-flex flex-column align-items-center advantagewrapper">
-        <img class="" height="80px" src="{{ asset('photo/delivery2.svg') }}" alt="">
-          <h4>FREE SHIPPING</h4>
+        <img class="" height="80px" src="{{ asset('photo/gratisongkir.jpg') }}" alt="">
+          <h4>FREE ONGKIR</h4>
       </div>
       <div class="col-lg-4 col-sm-12 d-flex flex-column align-items-center advantagewrapper">
-        <img class="" height="80px" src="{{ asset('photo/guarantee.svg') }}" alt="">
-          <h4>PREMIUM AND ORIGINAL</h4>
+        <img class="" height="80px" src="{{ asset('photo/higienis.jpg') }}" alt="">
+          <h4>HIGIENIS</h4>
       </div>
       <div class="col-lg-4 col-sm-12 d-flex flex-column align-items-center advantagewrapper">
-        <img class="" height="80px" src="{{ asset('photo/support.svg') }}" alt="">
-          <h4>24/7 CUSTOMER SUPPORT</h4>
+        <img class="" height="80px" src="{{ asset('photo/murah.png') }}" alt="">
+          <h4>MURAH</h4>
       </div>
     </div>
     <!-- ADVANTAGE [E]-->
