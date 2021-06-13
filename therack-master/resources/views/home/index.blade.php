@@ -28,8 +28,8 @@
         <a href="{{ route('product.index') }}">
           <button id="maleBtn">
           <div class="gender">
-            <img class="d-block w-100" src="{{ asset('photo/model3.jpg') }}" alt="">
-            <h2 class="pt-2">MEN</h2>
+            <img class="d-block w-100" src="{{ asset('photo/makanan.png') }}" alt="">
+            <h2 class="pt-2">MAKANAN</h2>
           </div>
         </button>
         </a>
@@ -38,8 +38,8 @@
         <a href="{{ route('product.index') }}">
           <button id="femaleBtn">
           <div class="gender">
-            <img class="d-block w-100" src="{{ asset('photo/model4.jpg') }}" alt="">
-            <h2 class="pt-2">WOMEN</h2>
+            <img class="d-block w-100" src="{{ asset('photo/minuman.png') }}" alt="">
+            <h2 class="pt-2">MINUMAN</h2>
           </div>
         </button>
         </a>
