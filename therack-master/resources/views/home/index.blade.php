@@ -27,7 +27,7 @@
       <div class="col-6 d-flex flex-column align-items-center genderwrapper">
         <a href="{{ route('product.index') }}">
           <button id="maleBtn">
-          <div class="gender">
+          <div class="menu">
             <img class="d-block w-100" src="{{ asset('photo/makanan.png') }}" alt="">
             <h2 class="pt-2">MAKANAN</h2>
           </div>
@@ -37,7 +37,7 @@
       <div class="col-6 d-flex flex-column align-items-center genderwrapper">
         <a href="{{ route('product.index') }}">
           <button id="femaleBtn">
-          <div class="gender">
+          <div class="menu">
             <img class="d-block w-100" src="{{ asset('photo/minuman.png') }}" alt="">
             <h2 class="pt-2">MINUMAN</h2>
           </div>
@@ -46,38 +46,10 @@
       </div>
     </div>
     <!-- MEN & WOMEN [E]-->
-
-        <!-- CATEGORY [S]-->
-        <div class="row m-0 pt-4">
-          <div class="col-lg-4 col-sm-12 d-flex flex-column align-items-center categorywrapper">
-            <a href="{{ route('product.index') }}">
-              <div class="category">
-                <img class="" height="200px" src="{{ asset('photo/shoes.png') }}" alt="">
-                <h5 class="pt-2">SHOES</h5>
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-4 col-sm-12 d-flex flex-column align-items-center categorywrapper">
-            <a href="#">
-              <div class="category">
-                <img class="" height="200px" src="{{ asset('photo/shirt.png') }}" alt="">
-                <h5 class="pt-2">CLOTHING</h5>
-            </div>
-            </a>
-          </div>
-          <div class="col-lg-4 col-sm-12 d-flex flex-column align-items-center categorywrapper">
-            <a href="#">
-              <div class="category">
-                <img class="" height="200px" src="{{ asset('photo/bag.png') }}" alt="">
-                <h5 class="pt-2">ACCESORIES</h5>
-              </div>
-            </a>
-          </div>
-        </div>
-        <!-- CATEGORY [E]-->
-
+    <BR></BR>
+     
     <!-- FEATURED SHOES [S]-->
-    <h2 class="pt-4">BESTSELLER</h2>
+    <h2 class="pt-4">REKOMENDASI MENU - BEST SELLER</h2>
     <div class="row d-flex justify-content-center">
       @foreach ($products as $product)    
       <div class="col-lg-3 col-md-6 col-sm-6 col-6 pt-3">
@@ -88,7 +60,7 @@
                 <div class="info-1"><img src="{{ asset('/storage/'.$product->image) }}" alt=""></div>
                 <div class="info-4"><h5>{{ $product->brand }}</h5></div>
                 <div class="info-2"><a href="product/{{ $product->id }}"><h4>{{ $product->name }}</h4></a></div>
-                <div class="info-3"><h5>RM {{ $product->price }}</h5></div>
+                <div class="info-3"><h5>Rp.{{ $product->price }}</h5></div>
               </div>
             </div>
           </a>
