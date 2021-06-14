@@ -16,38 +16,30 @@ class ProfilesTableSeeder extends Seeder
             [
                 'id'=>1,
                 'user_id'=>1,
-                'phonenumber'=>'011151552928',
-                'country'=>'Singapore',
-                'city'=>'Singapore',
-                'address'=>'Buangkok Green 512-4a',
-                'zipcode'=>42132
+                'telpon'=>'011151552928',
+                'kecamatan'=>'Singapore',
+                'alamat'=>'Buangkok Green 512-4a',
             ],
             [
                 'id'=>2,
                 'user_id'=>2,
-                'phonenumber'=>'08215551234',
-                'country'=>'Indonesia',
-                'city'=>'Medan',
-                'address'=>'Danau Toba',
-                'zipcode'=>27321
+                'telpon'=>'08215551234',
+                'kecamatan'=>'Medan',
+                'alamat'=>'Danau Toba',
             ],
             [
                 'id'=>3,
                 'user_id'=>3,
-                'phonenumber'=>'42912345',
-                'country'=>'United State of America',
-                'city'=>'Seattle',
-                'address'=>'Downtown Seattle ST 17',
-                'zipcode'=>78231
+                'telpon'=>'42912345',
+                'kecamatan'=>'Seattle',
+                'alamat'=>'Downtown Seattle ST 17',
             ],
             [
                 'id'=>4,
                 'user_id'=>4,
-                'phonenumber'=>'032912345',
-                'country'=>'China',
-                'city'=>'Guangzhou',
-                'address'=>'ST 23a',
-                'zipcode'=>78213
+                'telpon'=>'032912345',
+                'kecamatan'=>'Guangzhou',
+                'alamat'=>'ST 23a',
             ],
 
         ]);

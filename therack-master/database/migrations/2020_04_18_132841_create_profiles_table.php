@@ -16,11 +16,9 @@ class CreateProfilesTable extends Migration
         Schema::create('profiles', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('user_id');
-            $table->bigInteger('phonenumber')->nullable();
-            $table->string('country')->nullable();
-            $table->string('city')->nullable();
-            $table->text('address')->nullable();
-            $table->integer('zipcode')->nullable();
+            $table->bigInteger('telpon')->nullable();
+            $table->string('kecamatan')->nullable();
+            $table->text('alamat')->nullable();
             $table->timestamps();
 
             $table->index('user_id');

@@ -19,22 +19,12 @@
           </div>
         </div>
 
-        <div class="filtergender card">
+        <div class="filtercategory card">
           <div class="card-body">
-            <h5 class="card-title">Gender</h5>
-            @foreach ($genders as $genders)
-              <input type="checkbox" id="{{ $genders['gender'] }}" class="gender selector" name="gender" value="{{ $genders['gender'] }}" >
-              <label for="{{ $genders['gender'] }}">{{ $genders['gender'] }}</label><br>
-            @endforeach
-          </div>
-        </div>
-
-        <div class="filterbrand card">
-          <div class="card-body">
-            <h5 class="card-title">Brand</h5>
-            @foreach ($brands as $brands)
-              <input type="checkbox" id="{{ $brands['brand'] }}" class="brand selector" name="brand" value="{{ $brands['brand'] }}" >
-              <label for="{{ $brands['brand'] }}">{{ $brands['brand'] }}</label><br>
+            <h5 class="card-title">Categories</h5>
+            @foreach ($categories as $categories)
+              <input type="checkbox" id="{{ $categories['category'] }}" class="category selector" name="category" value="{{ $categories['category'] }}" >
+              <label for="{{ $categories['category'] }}">{{ $categories['category'] }}</label><br>
             @endforeach
           </div>
         </div>

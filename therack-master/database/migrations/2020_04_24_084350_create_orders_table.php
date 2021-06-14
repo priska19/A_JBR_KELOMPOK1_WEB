@@ -19,13 +19,9 @@ class CreateOrdersTable extends Migration
             $table->integer('user_id');
             $table->string('name');
             $table->text('cart');
-            $table->string('phonenumber');
-            $table->string('country');
-            $table->string('city');
-            $table->text('address');
-            $table->integer('zipcode');
-            $table->integer('payment_id')->nullable();
-            
+            $table->string('telpon');
+            $table->string('kecamatan');
+            $table->text('alamat');
         });
     }
 
