@@ -31,11 +31,11 @@
                     </div>
 
                     <div class="col-12">
-                        <label for="phonenumber" class="">{{ __('Phone Number') }}</label>
+                        <label for="telpon" class="">{{ __('Nomor Telpon') }}</label>
                         <div class="form-group">
                             <div>
-                                <input id="phonenumber" type="text" class="form-control @error('phonenumber') is-invalid @enderror" name="phonenumber" value="{{ old('phonenumber') ?? $user->profile->phonenumber ??'' }}" required autocomplete="phonenumber" autofocus>
-                                @error('phonenumber')
+                                <input id="telpon" type="text" class="form-control @error('telpon') is-invalid @enderror" name="telpon" value="{{ old('telpon') ?? $user->profile->telpon ??'' }}" required autocomplete="telpon" autofocus>
+                                @error('telpon')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
@@ -45,11 +45,11 @@
                     </div>
 
                     <div class="col-12">
-                        <label for="country" class="">{{ __('Country') }}</label>
+                        <label for="kecamatan" class="">{{ __('Kecamatan') }}</label>
                         <div class="form-group">
                             <div>
-                                <input id="country" type="text" class="form-control @error('country') is-invalid @enderror" name="country" value="{{ old('country') ?? $user->profile->country ??'' }}" required autocomplete="country" autofocus>
-                                @error('country')
+                                <input id="kecamatan" type="text" class="form-control @error('kecamatan') is-invalid @enderror" name="kecamatan" value="{{ old('kecamatan') ?? $user->profile->kecamatan ??'' }}" required autocomplete="kecamatan" autofocus>
+                                @error('kecamatan')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
@@ -59,11 +59,11 @@
                     </div>
 
                     <div class="col-12">
-                        <label for="city" class="">{{ __('City') }}</label>
+                        <label for="alamat" class="">{{ __('Alamat') }}</label>
                         <div class="form-group">
                             <div>
-                                <input id="city" type="text" class="form-control @error('city') is-invalid @enderror" name="city" value="{{ old('city') ?? $user->profile->city ??'' }}" required autocomplete="city" autofocus>
-                                @error('city')
+                                <input id="alamat" type="text" class="form-control @error('alamat') is-invalid @enderror" name="alamat" value="{{ old('alamat') ?? $user->profile->alamat ??'' }}" required autocomplete="alamat" autofocus>
+                                @error('alamat')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
@@ -71,99 +71,7 @@
                             </div>
                         </div>
                     </div>
-
-                    <div class="col-12">
-                        <label for="address" class="">{{ __('Address') }}</label>
-                        <div class="form-group">
-                            <div>
-                                <input id="address" type="text" class="form-control @error('address') is-invalid @enderror" name="address" value="{{ old('address') ?? $user->profile->address ??'' }}" required autocomplete="address" autofocus>
-                                @error('address')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-12">
-                        <label for="zipcode" class="">{{ __('Zipcode') }}</label>
-                        <div class="form-group">
-                            <div>
-                                <input id="zipcode" type="text" class="form-control @error('zipcode') is-invalid @enderror" name="zipcode" value="{{ old('zipcode') ?? $user->profile->zipcode ??'' }}" required autocomplete="zipcode" autofocus>
-                                @error('zipcode')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-12">
-                        <hr>
-                        <h5>BILLING ADDRESS</h5>
-                    </div>
-                    
-
-                    <div class="col-12">
-                        <label for="creditcardnumber" class="">{{ __('Credit Card Number') }}</label>
-                        <div class="form-group">
-                            <div>
-                                <input id="creditcardnumber" type="text" class="form-control @error('creditcardnumber') is-invalid @enderror" name="creditcardnumber" value="{{ old('creditcardnumber') }}" required autocomplete="creditcardnumber" autofocus>
-                                @error('creditcardnumber')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-6">
-                        <label for="expiremonth" class="">{{ __('Expiration Month') }}</label>
-                        <div class="form-group">
-                            <div>
-                                <input id="expiremonth" type="text" class="form-control @error('expiremonth') is-invalid @enderror" name="expiremonth" value="{{ old('expiremonth') }}" required autocomplete="expiremonth" autofocus>
-                                @error('expiremonth')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-6">
-                        <label for="expireyear" class="">{{ __('Expiration Year') }}</label>
-                        <div class="form-group">
-                            <div>
-                                <input id="expireyear" type="text" class="form-control @error('expireyear') is-invalid @enderror" name="expireyear" value="{{ old('expireyear') }}" required autocomplete="expireyear" autofocus>
-                                @error('expireyear')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
-                        </div>
-                    </div>
-
-                    
-                    <div class="col-12">
-                        <label for="cvc" class="">{{ __('CVC') }}</label>
-                        <div class="form-group">
-                            <div>
-                                <input id="cvc" type="text" class="form-control @error('cvc') is-invalid @enderror" name="cvc" value="{{ old('cvc') }}" required autocomplete="cvc" autofocus>
-                                @error('cvc')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
-                        </div>
-                    </div>
-
-
+                   
                 </div>
                 
                 <button type="submit" class="button-primary w-100">BUY NOW</button>

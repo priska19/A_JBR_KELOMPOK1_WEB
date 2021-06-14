@@ -28,15 +28,15 @@ class CheckoutController extends Controller
     {
         $this->validate(request(), [
             'name' => 'required|string',
-            'phonenumber' => 'required|regex:/^([0-9\s\-\+\(\)]*)$/|min:8',
-            'country' => 'required|string',
-            'city' => 'required|string',
-            'address' => 'required',
-            'zipcode' => 'required|digits:5',
-            'creditcardnumber' => 'required|digits:16',
-            'expiremonth' => 'required|digits:2',
-            'expireyear' => 'required|digits:2',
-            'cvc' => 'required|digits:3',
+            'telpon' => 'required|regex:/^([0-9\s\-\+\(\)]*)$/|min:8',
+            'kecamatan' => 'required|string',
+            'alamat' => 'required',
+            //'address' => 'required',
+            // 'zipcode' => 'required|digits:5',
+            // 'creditcardnumber' => 'required|digits:16',
+            // 'expiremonth' => 'required|digits:2',
+            // 'expireyear' => 'required|digits:2',
+            // 'cvc' => 'required|digits:3',
         ]);
         
         if(!Session::has('cart')){
@@ -54,12 +54,12 @@ class CheckoutController extends Controller
 
         $order = new Order();
         $order->cart = serialize($cart); 
-        $order->address = $request->input('address');
+        $order->alamat = $request->input('alamat');
         $order->name = $request->input('name');
-        $order->phonenumber = $request->input('phonenumber');
-        $order->city = $request->input('city');
-        $order->country = $request->input('country');
-        $order->zipcode = $request->input('zipcode');
+        $order->telpon = $request->input('telpon');
+        $order->kecamatan = $request->input('kecamatan');
+        // $order->alamat = $request->input('country');
+        // $order->zipcode = $request->input('zipcode');
         
         Auth::user()->orders()->save($order);
 
