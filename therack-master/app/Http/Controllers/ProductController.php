@@ -116,20 +116,22 @@ class ProductController extends Controller
         $this->validate(request(),[
             'image'=>'required|image',
             'name'=>'required|string',
-            'brand'=>'required|in:Nike,Adidas,New Balance,Asics,Puma,Skechers,Fila,Bata,Burberry,Converse',
+            //'brand'=>'required|in:Nike,Adidas,New Balance,Asics,Puma,Skechers,Fila,Bata,Burberry,Converse',
             'price'=>'required|integer',
-            'gender'=>'required|in:Male,Female,Unisex',
-            'category'=>'required|in:Shoes',
+            //'gender'=>'required|in:Male,Female,Unisex',
+            'category'=>'required|in:Shoes,Makanan,Minuman',
+            'stock' => 'required|integer',
         ]);
 
         $imagepath = $request->image->store('products','public');
         
         $product = new Product();
         $product->name=request('name');
-        $product->brand=request('brand');
+        //$product->brand=request('brand');
         $product->price=request('price');
-        $product->gender=request('gender');
+        //$product->gender=request('gender');
         $product->category=request('category');
+        $product->stock=request('stock');
         $product->image=$imagepath;
 
         
@@ -150,10 +152,11 @@ class ProductController extends Controller
         $this->validate(request(),[
             'image'=>'',
             'name'=>'required|string',
-            'brand'=>'required|in:Nike,Adidas,New Balance,Asics,Puma,Skechers,Fila,Bata,Burberry,Converse',
+            //'brand'=>'required|in:Nike,Adidas,New Balance,Asics,Puma,Skechers,Fila,Bata,Burberry,Converse',
             'price'=>'required|integer',
-            'gender'=>'required|in:Male,Female,Unisex',
-            'category'=>'required|in:Shoes',
+            //'gender'=>'required|in:Male,Female,Unisex',
+            'category'=>'required|in:Shoes,Makanan,Minuman',
+            'stock'=>'required|integer',
         ]);
         if(request('image'))
         {
@@ -161,10 +164,11 @@ class ProductController extends Controller
             $product = Product::findOrFail($id);
             
             $product->name=request('name');
-            $product->brand=request('brand');
+            //$product->brand=request('brand');
             $product->price=request('price');
-            $product->gender=request('gender');
+            //$product->gender=request('gender');
             $product->category=request('category');
+            $product->stock=request('stock');
             $product->image=$imagepath;
             $product->save();
         }
@@ -172,10 +176,11 @@ class ProductController extends Controller
         {
             $product = Product::findOrFail($id);
             $product->name=request('name');
-            $product->brand=request('brand');
+            //$product->brand=request('brand');
             $product->price=request('price');
-            $product->gender=request('gender');
+            //$product->gender=request('gender');
             $product->category=request('category');
+            $product->stock=request('stock');
             $product->save();
         }
         return redirect()->route('admin.product')->with('success','Successfully edited the product!');
