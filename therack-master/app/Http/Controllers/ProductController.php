@@ -15,12 +15,12 @@ class ProductController extends Controller
     public function index()
     {
         $products = Product::get();
-        $genders = Product::select('gender')->groupBy('gender')->get();
-        $brands = Product::select('brand')->groupBy('brand')->get();
+        //$genders = Product::select('gender')->groupBy('gender')->get();
+        //$brands = Product::select('brand')->groupBy('brand')->get();
         $categories = Product::select('category')->groupBy('category')->get();
         $maxPrice = Product::select('price')->max('price');
         $minPrice = Product::select('price')->min('price');
-        return view('products.index',compact(['brands','genders','categories','maxPrice','minPrice','products']));
+        return view('products.index',compact(['categories','maxPrice','minPrice','products']));
         
     }
 
@@ -31,8 +31,8 @@ class ProductController extends Controller
             $products= Product::where('quantity','>',0);
             $query = json_decode($request->get('query'));
             $price = json_decode($request->get('price'));
-            $gender = json_decode($request->get('gender'));
-            $brand = json_decode($request->get('brand'));
+            // $gender = json_decode($request->get('gender'));
+            // $brand = json_decode($request->get('brand'));
             
             if(!empty($query))
             {
@@ -42,15 +42,15 @@ class ProductController extends Controller
             {
                 $products= $products->where('price','<=',$price);
             }
-            if(!empty($gender))
-            {
-                $products= $products->whereIn('gender',$gender);
-            }   
-            if(!empty($brand))
-            {
-                $products= $products->whereIn('brand',$brand);
-            }
-            $products=$products->get();
+            // if(!empty($gender))
+            // {
+            //     $products= $products->whereIn('gender',$gender);
+            // }   
+            // if(!empty($brand))
+            // {
+            //     $products= $products->whereIn('brand',$brand);
+            // }
+            // $products=$products->get();
             
 
             $total_row = $products->count();
@@ -67,7 +67,7 @@ class ProductController extends Controller
                                     <div class="product-info">
                                     
                                     <div class="info-1"><img src="'.asset('/storage/'.$product->image).'" alt=""></div>
-                                    <div class="info-4"><h5>'.$product->brand.'</h5></div>
+                                    <div class="info-4"><h5>'.$product->category.'</h5></div>
                                     <div class="info-2"><h4>'.$product->name.'</h4></div>
                                     <div class="info-3"><h5>RM '.$product->price.'</h5></div>
                                     </div>
