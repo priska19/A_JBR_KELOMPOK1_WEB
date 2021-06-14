@@ -14,11 +14,9 @@
                     <th scope="col">ID</th>
                     <th scope="col">Name</th>
                     <th scope="col">Email</th>
-                    <th scope="col">Phone Number</th>
-                    <th scope="col">Country</th>
-                    <th scope="col">City</th>
-                    <th scope="col">Address</th>
-                    <th scope="col">Zipcode</th>
+                    <th scope="col">Nomor Telpon</th>
+                    <th scope="col">Kecamatan</th>
+                    <th scope="col">Alamat</th>                    
                   </tr>
                 </thead>
                 <tbody>
@@ -27,11 +25,9 @@
                     <th scope="row">{{ $user->user_id }}</th>
                     <td>{{ $user->name }}</td>
                     <td>{{ $user->email }}</td>
-                    <td>{{ $user->phonenumber }}</td>
-                    <td>{{ $user->country }}</td>
-                    <td>{{ $user->city }}</td>
-                    <td>{{ $user->address }}</td>
-                    <td>{{ $user->zipcode }}</td>
+                    <td>{{ $user->telpon }}</td>
+                    <td>{{ $user->kecamatan }}</td>
+                    <td>{{ $user->alamat }}</td>                    
                   </tr>
                 @endforeach
                 </tbody>
