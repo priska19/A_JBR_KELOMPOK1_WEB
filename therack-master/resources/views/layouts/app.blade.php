@@ -27,8 +27,9 @@
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
                     <div class="d-flex">
-                        <div><img src="{{ asset('photo/box.svg') }}" style="height:50px;" alt=""></div>
-                        <div class="pl-3 ml-3 pt-2" style="border-left:1px solid rgba(0, 0, 0, 0.5); font-size:1.5rem;">{{ config('app.name', 'Bakso Viral Jember') }}</div>
+                        <div><img src="{{ asset('photo/logo.png') }}" style="height:80px;" alt=""></div>
+                        <div class="pl-3 ml-3 pt-2" style="border-left:1px solid rgba(0, 0, 0, 0.5); font-size:1.5rem;" link="{{url ('home')}}">Bakso Viral Jember</div>
+                        <!-- {{ config('app.name', 'Bakso Viral Jember') }} -->
                     </div>
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
