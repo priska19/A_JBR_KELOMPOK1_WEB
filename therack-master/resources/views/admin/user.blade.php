@@ -12,7 +12,7 @@
                 <thead>
                   <tr>
                     <th scope="col">ID</th>
-                    <th scope="col">Name</th>
+                    <th scope="col">Nama</th>
                     <th scope="col">Email</th>
                     <th scope="col">Nomor Telpon</th>
                     <th scope="col">Kecamatan</th>

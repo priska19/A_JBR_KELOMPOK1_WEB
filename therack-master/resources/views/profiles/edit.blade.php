@@ -12,7 +12,7 @@
                 <h3 class="offset-md-5">Edit Profile</h3>
                 <hr>
                 <div class="form-group row">
-                    <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Name:') }}</label>
+                    <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Nama:') }}</label>
         
                     <div class="col-md-6">
                         <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') ?? $user->name }}" required autocomplete="name" autofocus>
@@ -26,12 +26,12 @@
                 </div>
                 
                 <div class="form-group row">
-                    <label for="phonenumber" class="col-md-4 col-form-label text-md-right">{{ __('Phone Number:') }}</label>
+                    <label for="telpon" class="col-md-4 col-form-label text-md-right">{{ __('Nomor Telpon:') }}</label>
         
                     <div class="col-md-6">
-                        <input id="phonenumber" type="text" class="form-control @error('phonenumber') is-invalid @enderror" name="phonenumber" value="{{ old('phonenumber') ?? $user->profile->phonenumber  }}" required autocomplete="phonenumber" autofocus>
+                        <input id="telpon" type="text" class="form-control @error('telpon') is-invalid @enderror" name="telpon" value="{{ old('telpon') ?? $user->profile->telpon  }}" required autocomplete="telpon" autofocus>
         
-                        @error('phonenumber')
+                        @error('telpon')
                             <span class="invalid-feedback" role="alert">
                                 <strong>{{ $message }}</strong>
                             </span>
@@ -40,12 +40,12 @@
                 </div>
                 
                 <div class="form-group row">
-                    <label for="country" class="col-md-4 col-form-label text-md-right">{{ __('Country:') }}</label>
+                    <label for="kecamatan" class="col-md-4 col-form-label text-md-right">{{ __('Kecamatan:') }}</label>
         
                     <div class="col-md-6">
-                        <input id="country" type="text" class="form-control @error('country') is-invalid @enderror" name="country" value="{{ old('country') ?? $user->profile->country  }}" required autocomplete="country" autofocus>
+                        <input id="kecamatan" type="text" class="form-control @error('kecamatan') is-invalid @enderror" name="kecamatan" value="{{ old('kecamatan') ?? $user->profile->kecamatan  }}" required autocomplete="kecamatan" autofocus>
         
-                        @error('country')
+                        @error('kecamatan')
                             <span class="invalid-feedback" role="alert">
                                 <strong>{{ $message }}</strong>
                             </span>
@@ -54,46 +54,18 @@
                 </div>
                 
                 <div class="form-group row">
-                    <label for="city" class="col-md-4 col-form-label text-md-right">{{ __('City:') }}</label>
+                    <label for="alamat" class="col-md-4 col-form-label text-md-right">{{ __('Alamat:') }}</label>
         
                     <div class="col-md-6">
-                        <input id="city" type="text" class="form-control @error('city') is-invalid @enderror" name="city" value="{{ old('city') ?? $user->profile->city }}" required autocomplete="city" autofocus>
+                        <input id="alamat" type="text" class="form-control @error('alamat') is-invalid @enderror" name="alamat" value="{{ old('alamat') ?? $user->profile->alamat }}" required autocomplete="alamat" autofocus>
         
-                        @error('city')
+                        @error('alamat')
                             <span class="invalid-feedback" role="alert">
                                 <strong>{{ $message }}</strong>
                             </span>
                         @enderror
                     </div>
-                </div>
-                
-                <div class="form-group row">
-                    <label for="address" class="col-md-4 col-form-label text-md-right">{{ __('Address:') }}</label>
-        
-                    <div class="col-md-6">
-                        <input id="address" type="text" class="form-control @error('address') is-invalid @enderror" name="address" value="{{ old('address') ?? $user->profile->address }}" required autocomplete="address" autofocus>
-        
-                        @error('address')
-                            <span class="invalid-feedback" role="alert">
-                                <strong>{{ $message }}</strong>
-                            </span>
-                        @enderror
-                    </div>
-                </div>
-        
-                <div class="form-group row">
-                    <label for="zipcode" class="col-md-4 col-form-label text-md-right">{{ __('Zipcode:') }}</label>
-        
-                    <div class="col-md-6">
-                        <input id="zipcode" type="text" class="form-control @error('zipcode') is-invalid @enderror" name="zipcode" value="{{ old('zipcode') ?? $user->profile->zipcode }}" required autocomplete="zipcode" autofocus>
-        
-                        @error('zipcode')
-                            <span class="invalid-feedback" role="alert">
-                                <strong>{{ $message }}</strong>
-                            </span>
-                        @enderror
-                    </div>
-                </div>
+                </div>                                
         
                 <div class="form-group row mb-0">
                     <div class="col-md-6 offset-md-4">

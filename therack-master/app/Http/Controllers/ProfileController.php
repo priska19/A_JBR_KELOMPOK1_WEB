@@ -13,11 +13,9 @@ class ProfileController extends Controller
 
     public function update($user){
         $data = request()->validate([
-            'phonenumber'=> ['required', 'numeric'] ,
-            'country'=>['required', 'string', 'max:255'],
-            'city'=>['required', 'string', 'max:255'],
-            'address'=>['required', 'string', 'max:255'],
-            'zipcode'=>['required', 'digits:5'],
+            'telpon'=> ['required', 'numeric'] ,
+            'kecamatan'=>['required', 'string', 'max:255'],
+            'alamat'=>['required', 'string', 'max:255'],
 
         ]);
 
