@@ -16,7 +16,7 @@
   <!-- banner -->
   <div class="row">
       <div class="col-12 promowrap">
-        <div class="row m-0 p-0">
+        <!-- <div class="row m-0 p-0">
           <div class="col-4 promo-info h-100">
             <div class="infowrapper d-flex flex-column h-100 justify-content-center">
               <h2>GET FIT FROM HOME</h2>
@@ -25,7 +25,7 @@
               <a href="{{ route('product.index') }}" class="w-100 button">SHOP NOW</a>
             </div>   
           </div> 
-        </div>
+        </div> -->
         <img class="d-block w-100" src="{{ asset('photo/bannerbakso.jpg') }}" alt="">
       </div>
     </div>
