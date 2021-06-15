@@ -71,7 +71,7 @@
                                     <a href="{{ route('profile.edit',['user'=>Auth::user()->id ]) }}" class="dropdown-item">Edit Profile</a>
                                     
                                     @if(Auth::user()->role == 'Customer')
-                                    <a href="{{ route('order.show',['user'=>Auth::user()->id]) }}" class="dropdown-item">Purchase History</a>
+                                    <a href="{{ route('order.show',['user'=>Auth::user()->id]) }}" class="dropdown-item">History Pesanan</a>
                                     @endif
                                     
                                     <a class="dropdown-item" href="{{ route('logout') }}"
