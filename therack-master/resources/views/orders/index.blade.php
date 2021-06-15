@@ -65,8 +65,8 @@
             <div class="row">
                 <div class="col-12 d-flex flex-column justify-content-center align-items-center sixtyvh empty-history">
                     <div><i class="fa fa-th-list"></i></div>
-                    <div><h4><b>Your purchase history is empty.</b></h4></div>
-                    <div><a href="{{ route('product.index') }}">Go grab some product first :)</a></div>
+                    <div><h4><b>Anda Belum Melakukan Pemesanan !!!</b></h4></div>
+                    <div><a href="{{ route('product.index') }}">Yuk Cepat Buruan Pesan Sekarang !!!</a></div>
                 </div>
             </div>
         </div>
