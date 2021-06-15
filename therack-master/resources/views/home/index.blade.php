@@ -26,17 +26,17 @@
             </div>   
           </div> 
         </div>
-        <img class="d-block w-100" src="{{ asset('photo/fitfromhome.jpg') }}" alt="">
+        <img class="d-block w-100" src="{{ asset('photo/bannerbakso.jpg') }}" alt="">
       </div>
     </div>
     <!-- end banner -->
-    <div class="row">
+    <!-- <div class="row">
       <div class="col-12 promowrap">
         <div class="row m-0 p-0">
         </div>
         <img class="d-block w-100" src="{{ asset('photo/bannerbakso.jpg') }}" alt="">
       </div>
-    </div>
+    </div> -->
     <!-- GET FIT FROM HOME [E]-->
 
     <!-- MEN & WOMEN [S]-->
