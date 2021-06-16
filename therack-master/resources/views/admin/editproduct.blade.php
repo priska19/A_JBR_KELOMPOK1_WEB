@@ -46,7 +46,7 @@
                 <div class="form-group">
                     <div>
                         <select name="category" id="addproductcategory" class="form-control">
-                            <option value="Shoes">Shoes</option>
+                            <option>choose category</option>
                             <option value="Makanan">Makanan</option>
                             <option value="Minuman">Minuman</option>
                         </select>

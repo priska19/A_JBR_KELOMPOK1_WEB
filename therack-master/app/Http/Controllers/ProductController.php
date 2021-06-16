@@ -119,7 +119,7 @@ class ProductController extends Controller
             //'brand'=>'required|in:Nike,Adidas,New Balance,Asics,Puma,Skechers,Fila,Bata,Burberry,Converse',
             'price'=>'required|integer',
             //'gender'=>'required|in:Male,Female,Unisex',
-            'category'=>'required|in:Shoes,Makanan,Minuman',
+            'category'=>'required|in:Makanan,Minuman',
             'stock' => 'required|integer',
         ]);
 
@@ -155,7 +155,7 @@ class ProductController extends Controller
             //'brand'=>'required|in:Nike,Adidas,New Balance,Asics,Puma,Skechers,Fila,Bata,Burberry,Converse',
             'price'=>'required|integer',
             //'gender'=>'required|in:Male,Female,Unisex',
-            'category'=>'required|in:Shoes,Makanan,Minuman',
+            'category'=>'required|in:Makanan,Minuman',
             'stock'=>'required|integer',
         ]);
         if(request('image'))

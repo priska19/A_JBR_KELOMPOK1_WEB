@@ -25,7 +25,7 @@
                         : {{ $id->payment_id }} <br>
                         : {{ $id->user_id }} <br>
                         : {{ $id->name }} <br>
-                        : {{ $id->phonenumber }} <br>
+                        : {{ $id->telpon }} <br>
                         : PAID
                     </div>
                 </div>
@@ -38,18 +38,14 @@
                 <hr>
                 <div class="row">
                     <div class="col-5">
-                        Country <br>
-                        City <br>
-                        Zipcode <br>
-                        Address <br>
-                        
+                        Kecamatan <br>
+                        Alamat <br>
+                                               
                     </div>
                     <div class="col-7">
-                        : {{ $id->country }} <br>
-                        : {{ $id->city }} <br>
-                        : {{ $id->zipcode }} <br>
-                        : {{ $id->address }} <br>
-                        
+                        : {{ $id->kecamatan }} <br>
+                        : {{ $id->alamat }} <br>
+                                            
                     </div>
                 </div>
             </div>

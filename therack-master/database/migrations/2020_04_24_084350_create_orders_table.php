@@ -22,6 +22,7 @@ class CreateOrdersTable extends Migration
             $table->string('telpon');
             $table->string('kecamatan');
             $table->text('alamat');
+            $table->integer('payment_id')->nullable();
         });
     }
 

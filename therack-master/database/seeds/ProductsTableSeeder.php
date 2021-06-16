@@ -107,15 +107,7 @@ class ProductsTableSeeder extends Seeder
                 'image'=>'products/milo.png',
                 'category'=>'Minuman',
                 'stock'=>3
-            ],
-            [
-                'id'=>13,
-                'name'=>'OLD SKOOL \'BLACK WHITE\' "BLACK WHITE"',
-                'price'=> 239,
-                'image'=>'products/13.jpg',
-                'category'=>'Shoes',
-                'stock'=>6
-            ],          
+            ],         
 
         ]);
     }
