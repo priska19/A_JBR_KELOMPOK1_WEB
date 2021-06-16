@@ -7,8 +7,10 @@
         <div class="card-header">
             <h5>USER LIST</h5>
         </div>
+        
         <div class="card-body">
             <table class="table table-striped">
+            <button type="button" class="btn btn-secondary mb-4">Tambah User</button>
                 <thead>
                   <tr>
                     <th scope="col">ID</th>
@@ -33,6 +35,7 @@
                 </tbody>
               </table>
         </div>
+        
     </div>
 </div>
     

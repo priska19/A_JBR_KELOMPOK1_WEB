@@ -96,9 +96,9 @@
                                 <a href="{{ route('admin.product') }}" class="list-group-item admin-navigation">
                                         Product
                                 </a>
-                                <a href="{{ route('admin.stock') }}" class="list-group-item admin-navigation">
+                                <!-- <a href="{{ route('admin.stock') }}" class="list-group-item admin-navigation">
                                         Stock
-                                </a>
+                                </a> -->
                                 <a href="{{ route('admin.order') }}" class="list-group-item admin-navigation">
                                         Order
                                 </a>
