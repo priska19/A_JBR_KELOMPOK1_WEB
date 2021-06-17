@@ -67,7 +67,7 @@
             </div>
         </div>
         <div class="col-12 col-md-12 col-sm-12 col-lg-4 mt-4">
-            <div class="card">
+            <!-- <div class="card">
                 <div class="card-header">
                     Reminder
                 </div>
@@ -79,7 +79,7 @@
                         <button type="submit" class="button-primary w-100">UPDATE</button>
                     </form>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
 </div>
