@@ -9,8 +9,9 @@
         </div>
         
         <div class="card-body">
+        <a href="{{ route('admin.tambahuser') }}" class="btn btn-success mb-4" style="color:white; width:150px;">TAMBAH USER</a>
             <table class="table table-striped">
-            <button type="button" class="btn btn-secondary mb-4">Tambah User</button>
+            <!-- <button type="button" class="btn btn-secondary mb-4">Tambah User</button> -->
                 <thead>
                   <tr>
                     <th scope="col">ID</th>

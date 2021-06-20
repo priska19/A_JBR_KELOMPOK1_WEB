@@ -27,7 +27,7 @@
                             </select>
                         </div>
                         <div class="info-3">
-                            <p>This product is pre-verified, and will be ready to ship instantly. Expedited shipping options will be available in checkout.
+                            <p>Menggunakan bahan dengan kualitas terbaik dan menjaga kualitasnya hingga di tangan konsumen untuk menjamin kepuasan anda. 
                             </p>
                         </div>
                         <a href="{{ route('cart.add',['product'=>$product->id]) }}" id="add-to-cart" class="add-to-cart disabled">
