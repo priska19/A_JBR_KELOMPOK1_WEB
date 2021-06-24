@@ -28,7 +28,7 @@ class ProductController extends Controller
     {
         if($request->ajax())
         {
-            $products= Product::where('quantity','>',0);
+            $products= Product::where('stock','>',0);
             $query = json_decode($request->get('query'));
             $price = json_decode($request->get('price'));
             // $gender = json_decode($request->get('gender'));
@@ -50,7 +50,7 @@ class ProductController extends Controller
             // {
             //     $products= $products->whereIn('brand',$brand);
             // }
-            // $products=$products->get();
+             $products=$products->get();
             
 
             $total_row = $products->count();
@@ -66,7 +66,7 @@ class ProductController extends Controller
                                 <div class="card-body ">
                                     <div class="product-info">
                                     
-                                    <div class="info-1"><img src="'.asset('/storage/'.$product->image).'" alt=""></div>
+                                    <div class="info-1"><img src="'.asset('/products/'.$product->image).'" alt=""></div>
                                     <div class="info-4"><h5>'.$product->category.'</h5></div>
                                     <div class="info-2"><h4>'.$product->name.'</h4></div>
                                     <div class="info-3"><h5>RM '.$product->price.'</h5></div>
