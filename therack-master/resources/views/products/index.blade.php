@@ -15,7 +15,7 @@
           <div class="card-body">
             <h5 class="card-title">Price</h5>
             <input type="range" min="{{ $minPrice }}" max="{{ $maxPrice }}" value="{{ $maxPrice }}" class="slider selector" id="pricerange">
-            <p class="p-0 m-0">Max: RM <span id="currentrange">{{ $maxPrice }}</span></p>
+            <p class="p-0 m-0">Max: RP <span id="currentrange">{{ $maxPrice }}</span></p>
           </div>
         </div>
 

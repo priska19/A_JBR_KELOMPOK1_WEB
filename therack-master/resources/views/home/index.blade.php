@@ -43,9 +43,9 @@
     <div class="row pt-4">
       <div class="col-6 d-flex flex-column align-items-center genderwrapper">
         <a href="{{ route('product.index') }}">
-          <button id="maleBtn">
-          <div class="menu">
-            <img class="d-block w-100" src="{{ asset('photo/makanan.png') }}" alt=""  >
+          <button id="makananBtn">
+          <div class="category">
+            <img class="" height="300px" src="{{ asset('photo/makanan.png') }}" alt=""  >
             <h2 class="pt-2">MAKANAN</h2>
           </div>
         </button>
@@ -53,9 +53,9 @@
       </div>
       <div class="col-6 d-flex flex-column align-items-center genderwrapper">
         <a href="{{ route('product.index') }}">
-          <button id="femaleBtn">
-          <div class="menu">
-            <img class="d-block w-100" src="{{ asset('photo/minuman.png') }}" alt="">
+          <button id="minumanBtn">
+          <div class="category">
+            <img class="" height="300px" src="{{ asset('photo/minuman.png') }}" alt="">
             <h2 class="pt-2">MINUMAN</h2>
           </div>
         </button>
@@ -64,7 +64,7 @@
     </div>
     <!-- MEN & WOMEN [E]-->
     <BR></BR>
-     
+    
     <!-- FEATURED SHOES [S]-->
     <h2 class="pt-4">REKOMENDASI MENU - BEST SELLER</h2>
     <div class="row d-flex justify-content-center">
