@@ -64,9 +64,9 @@
                             <div class="col-12 offset-md-3">
                                 <a class="btn btn-link" href="{{ route('register') }}">Don't have an account? Sign up for free here!</a><br>
                                 @if (Route::has('password.request'))
-                                    <a class="btn btn-link" href="{{ route('password.request') }}">
+                                    <!-- <a class="btn btn-link" href="{{ route('password.request') }}">
                                         {{ __('Forgot Your Password?') }}
-                                    </a>
+                                    </a> -->
                                 @endif
                                 
                             </div>
