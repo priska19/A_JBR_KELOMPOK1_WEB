@@ -59,7 +59,7 @@
                     </div>
 
                     <div class="col-12">
-                        <label for="alamat" class="">{{ __('Alamat') }}</label>
+                        <label for="alamat" class="">{{ __('Alamat Pengantaran') }}</label>
                         <div class="form-group">
                             <div>
                                 <input id="alamat" type="text" class="form-control @error('alamat') is-invalid @enderror" name="alamat" value="{{ old('alamat') ?? $user->profile->alamat ??'' }}" required autocomplete="alamat" autofocus>
