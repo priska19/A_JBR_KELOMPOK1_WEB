@@ -30,7 +30,7 @@
                                         <h6>Quantity: {{ $item['quantity'] }}</h6>
                                     </div>
                                     <div class="detail-4">
-                                        <h6>Price: RM   {{ $item['price'] }}</h6>
+                                        <h6>Price: RP   {{ $item['price'] }}</h6>
                                     </div>
                                 </div> 
                             </div>
@@ -43,13 +43,11 @@
                             <h6>Order ID</h6>
                             <h6>Date </h6>
                             <h6>Total Price</h6>
-                            <h6>Payment ID</h6>
                         </div>
                         <div class="col-8">
                             <h6>: {{ $order['id'] }}</h6>
                             <h6>: {{ $order['created_at'] }}</h6>
-                            <h6>: RM {{ $order->cart->totalPrice}}</h6>
-                            <h6>: PAsxz1alfg45</h6>
+                            <h6>: RP {{ $order->cart->totalPrice}}</h6>
                         </div>
                     </div>
 

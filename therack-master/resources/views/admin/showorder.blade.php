@@ -13,7 +13,6 @@
                 <div class="row">
                     <div class="col-5">
                         Order ID<br>
-                        Payment ID <br>
                         Buyer ID<br>
                         Buyer Name <br>
                         Phone Number <br>
@@ -22,7 +21,6 @@
                     </div>
                     <div class="col-7">
                         : {{ $id->id }} <br>
-                        : {{ $id->payment_id }} <br>
                         : {{ $id->user_id }} <br>
                         : {{ $id->name }} <br>
                         : {{ $id->telpon }} <br>
