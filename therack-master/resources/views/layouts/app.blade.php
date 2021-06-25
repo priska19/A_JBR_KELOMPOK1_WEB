@@ -139,16 +139,18 @@
         {
             var search=JSON.stringify(query);
             var price =JSON.stringify($('#pricerange').val());
-            var gender =JSON.stringify(get_filter('gender')); 
-            var brand =JSON.stringify(get_filter('brand'));
+            var category =JSON.stringify(get_filter('category')); 
+            // var gender =JSON.stringify(get_filter('gender')); 
+            // var brand =JSON.stringify(get_filter('brand'));
             $.ajax({
                 url:"{{ route('product.filter') }}",
                 method:'GET',
                 data:{
                     query:search,
                     price:price,
-                    gender:gender,
-                    brand:brand,
+                    category:category
+                    // gender:gender,
+                    // brand:brand,
                     },
                 dataType:'json',
                 success:function(data)

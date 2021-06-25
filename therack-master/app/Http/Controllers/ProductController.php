@@ -31,6 +31,7 @@ class ProductController extends Controller
             $products= Product::where('stock','>',0);
             $query = json_decode($request->get('query'));
             $price = json_decode($request->get('price'));
+            $category = json_decode($request->get('category'));
             // $gender = json_decode($request->get('gender'));
             // $brand = json_decode($request->get('brand'));
             
@@ -50,6 +51,10 @@ class ProductController extends Controller
             // {
             //     $products= $products->whereIn('brand',$brand);
             // }
+            if(!empty($category))
+            {
+                $products= $products->whereIn('category',$category);
+            }
              $products=$products->get();
             
 
