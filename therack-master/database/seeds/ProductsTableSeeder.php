@@ -16,7 +16,7 @@ class ProductsTableSeeder extends Seeder
                 'id'=>1,
                 'name'=>'Bakso Tetelan',
                 'price'=>10000,
-                'image'=>'products/tetelan.png',
+                'image'=>'tetelan.png',
                 'category'=>'Makanan',
                 'stock'=>1
             ],
@@ -24,7 +24,7 @@ class ProductsTableSeeder extends Seeder
                 'id'=>2,
                 'name'=>'Bakso Telur',
                 'price'=>10000,
-                'image'=>'products/telur.png',
+                'image'=>'telur.png',
                 'category'=>'Makanan',
                 'stock'=>12
             ],
@@ -32,7 +32,7 @@ class ProductsTableSeeder extends Seeder
                 'id'=>3,
                 'name'=>'Bakso Kasar',
                 'price'=>10000,
-                'image'=>'products/kasar.png',
+                'image'=>'kasar.png',
                 'category'=>'Makanan',
                 'stock'=>1
             ],
@@ -40,7 +40,7 @@ class ProductsTableSeeder extends Seeder
                 'id'=>4,
                 'name'=>'Bakso Alus',
                 'price'=>10000,
-                'image'=>'products/alus.png',
+                'image'=>'alus.png',
                 'category'=>'Makanan',
                 'stock'=>1
             ],
@@ -48,7 +48,7 @@ class ProductsTableSeeder extends Seeder
                 'id'=>5,
                 'name'=>'Bakso Judes',
                 'price'=>10000,
-                'image'=>'products/judes.png',
+                'image'=>'judes.png',
                 'category'=>'Makanan',
                 'stock'=>14
             ],
@@ -56,7 +56,7 @@ class ProductsTableSeeder extends Seeder
                 'id'=>6,
                 'name'=>'Bakso Masker',
                 'price'=>10000,
-                'image'=>'products/masker.png',
+                'image'=>'masker.png',
                 'category'=>'Makanan',
                 'stock'=>3
             ],
@@ -64,7 +64,7 @@ class ProductsTableSeeder extends Seeder
                 'id'=>7,
                 'name'=>'Bakso Positif',
                 'price'=>10000,
-                'image'=>'products/positif.png',
+                'image'=>'positif.png',
                 'category'=>'Makanan',
                 'stock'=>5
             ],
@@ -72,7 +72,7 @@ class ProductsTableSeeder extends Seeder
                 'id'=>8,
                 'name'=>'Bakso Swab',
                 'price'=>10000,
-                'image'=>'products/Swab.png',
+                'image'=>'Swab.png',
                 'category'=>'Makanan',
                 'stock'=>3
             ],
@@ -80,7 +80,7 @@ class ProductsTableSeeder extends Seeder
                 'id'=>9,
                 'name'=>'Bakso Corona',
                 'price'=>10000,
-                'image'=>'products/corona.png',
+                'image'=>'corona.png',
                 'category'=>'Makanan',
                 'stock'=>3
             ],
@@ -88,7 +88,7 @@ class ProductsTableSeeder extends Seeder
                 'id'=>10,
                 'name'=>'Es Teh',
                 'price'=>2500,
-                'image'=>'products/teh.png',
+                'image'=>'teh.png',
                 'category'=>'Minuman',
                 'stock'=>5
             ],
@@ -96,7 +96,7 @@ class ProductsTableSeeder extends Seeder
                 'id'=>11,
                 'name'=>'Es Jeruk',
                 'price'=>3000,
-                'image'=>'products/jeruk.png',
+                'image'=>'jeruk.png',
                 'category'=>'Minuman',
                 'stock'=>3
             ],
@@ -104,7 +104,7 @@ class ProductsTableSeeder extends Seeder
                 'id'=>12,
                 'name'=>'Es Milo',
                 'price'=>4000,
-                'image'=>'products/milo.png',
+                'image'=>'milo.png',
                 'category'=>'Minuman',
                 'stock'=>3
             ],         
