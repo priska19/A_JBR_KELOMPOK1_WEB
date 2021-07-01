@@ -73,7 +73,8 @@ class AdminController extends Controller
     public function user()
     {
         $users=DB::table('users')->leftjoin('profiles','users.id','=','profiles.user_id')->get();
-        return view('admin.user',compact('users'));
+        $no = 1;
+        return view('admin.user',compact('users','no'));
     }
 
     public function updatereminder()

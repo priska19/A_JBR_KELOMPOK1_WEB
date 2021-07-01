@@ -9,12 +9,12 @@
         </div>
         
         <div class="card-body">
-        <a href="{{ route('admin.tambahuser') }}" class="btn btn-success mb-4" style="color:white; width:150px;">TAMBAH USER</a>
+        <a href="{{ route('admin.form') }}" class="btn btn-success mb-4" style="color:white; width:150px;">ADD USER</a>
             <table class="table table-striped">
             <!-- <button type="button" class="btn btn-secondary mb-4">Tambah User</button> -->
                 <thead>
                   <tr>
-                    <th scope="col">ID</th>
+                    <th scope="col">NO</th>
                     <th scope="col">Nama</th>
                     <th scope="col">Email</th>
                     <th scope="col">Nomor Telpon</th>
@@ -25,7 +25,7 @@
                 <tbody>
                 @foreach ($users as $user)
                   <tr>
-                    <th scope="row">{{ $user->user_id }}</th>
+                    <th scope="row">{{ $no++ }}</th>
                     <td>{{ $user->name }}</td>
                     <td>{{ $user->email }}</td>
                     <td>{{ $user->telpon }}</td>

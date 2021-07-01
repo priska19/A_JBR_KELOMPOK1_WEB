@@ -23,7 +23,9 @@ Route::get('/order', 'AdminController@order')->name('admin.order')->middleware([
 Route::get('/order/{id}', 'AdminController@show_order')->name('admin.showorder')->middleware(['auth','admin']);
 
 Route::get('/user', 'AdminController@user')->name('admin.user')->middleware(['auth','admin']);
+Route::get('/user/add', 'tambahuserController@form')->name('admin.form')->middleware(['auth','admin']);
 
+Route::post('/user', 'tambahuserController@store')->name('admin.tambahuser')->middleware(['auth','admin']);
 Route::get('/admin-product', 'ProductController@list')->name('admin.product')->middleware(['auth','admin']);
 Route::get('/admin-product/add', 'ProductController@form')->name('admin.addform')->middleware(['auth','admin']);
 Route::post('/admin-product/add', 'ProductController@create')->name('product.create')->middleware(['auth','admin']);

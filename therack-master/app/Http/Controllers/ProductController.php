@@ -128,8 +128,10 @@ class ProductController extends Controller
             'stock' => 'required|integer',
         ]);
 
-        $imagepath = $request->image->store('products','public');
+        $image = $request->file('image');
+        $newFileName = $image->getClientOriginalName();
         
+        $image->storeAs('public/products/', $newFileName);
         $product = new Product();
         $product->name=request('name');
         //$product->brand=request('brand');
@@ -137,7 +139,7 @@ class ProductController extends Controller
         //$product->gender=request('gender');
         $product->category=request('category');
         $product->stock=request('stock');
-        $product->image=$imagepath;
+        $product->image=$newFileName;
 
         
 

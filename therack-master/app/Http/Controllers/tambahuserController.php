@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Hash;
 use DB;
 
 
@@ -14,7 +15,7 @@ class tambahuserController extends Controller
     }
     public function create()
     {
-        $add_user = DB::table('user')->get();
+        $add_user = DB::table('users')->get();
         return view('admin.addproduct');
     }
 
@@ -29,10 +30,11 @@ class tambahuserController extends Controller
 
     public function store(Request $request){
     
-        DB::table('user')->insert([
+        DB::table('users')->insert([
             'name'=>$request->name,
             'email'=>$request->email,
-            'password'=>$request->password,
+            'password'=>Hash::make($request->password),
+            'role' => 'Admin',
             ]);
         
         return redirect()->route('admin.user')->with('success','Successfully added the user!');
