@@ -44,12 +44,6 @@ class CheckoutController extends Controller
         }
         $oldCart = Session::get('cart');
         $cart = new Cart($oldCart);
-
-        foreach ($cart->items as $order) {
-            Stock::where('product_id',$order['product_id'])
-                    ->where('name',$order['size'])
-                    ->decrement('quantity');
-        }
         
 
         $order = new Order();

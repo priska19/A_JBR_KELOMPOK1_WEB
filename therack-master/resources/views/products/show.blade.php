@@ -4,8 +4,8 @@
 
 <div class="container p-0 show">
    <div class="row sixtyvh">
-       <div class="col-lg-8 col-sm-12 mb-3 show-picture">
-            <img src="{{ asset('/products/'.$product->image) }}" alt="">
+       <div class="col-6 d-flex flex-column align-items-center">
+            <img height="300px" src="{{ asset('/storage/products/'.$product->image) }}" alt="">
        </div>
        <div class="col-lg-4 col-sm-12 pl-5 pr-5">
         <h6><strong>{{ $product->brand }}</strong></h6>
@@ -16,21 +16,12 @@
                         <div class="info-1">
                             <h6>BUY NEW</h6>
                         </div>
-                        <div class="info-2">
-                            <select id="size-dropdown">
-                                <option selected="true" value="nothing" disabled hidden>Choose size</option>
-                                @foreach($sizes as $size)
-                                    @if($size->quantity > 0)
-                                        <option value="{{ $size->name }}">{{ $size->name }}</option>
-                                    @endif
-                                @endforeach
-                            </select>
-                        </div>
                         <div class="info-3">
                             <p>Menggunakan bahan dengan kualitas terbaik dan menjaga kualitasnya hingga di tangan konsumen untuk menjamin kepuasan anda. 
                             </p>
                         </div>
-                        <a href="{{ route('cart.add',['product'=>$product->id]) }}" id="add-to-cart" class="add-to-cart disabled">
+                        
+                        <a href="{{ route('cart.add',['product'=>$product->id]) }}" class="add-to-cart">
                             <div class="info-4">
                                 ADD TO CART
                             </div>

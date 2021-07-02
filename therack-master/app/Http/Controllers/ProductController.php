@@ -71,10 +71,10 @@ class ProductController extends Controller
                                 <div class="card-body ">
                                     <div class="product-info">
                                     
-                                    <div class="info-1"><img src="'.asset('/products/'.$product->image).'" alt=""></div>
+                                    <div class="info-1"><img src="'.asset('storage/products/'.$product->image).'" alt=""></div>
                                     <div class="info-4"><h5>'.$product->category.'</h5></div>
                                     <div class="info-2"><h4>'.$product->name.'</h4></div>
-                                    <div class="info-3"><h5>RM '.$product->price.'</h5></div>
+                                    <div class="info-3"><h5>RP '.$product->price.'</h5></div>
                                     </div>
                                 </div>
                             </a>

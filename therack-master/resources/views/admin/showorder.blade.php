@@ -64,14 +64,12 @@
                                 <div class="detail-1">
                                     <h5>{{ $item['item']['name'] }}</h5>
                                 </div>
-                                <div class="detail-2">
-                                    <h6>Size: {{ $item['size'] }}</h6>
-                                </div>
+                                
                                 <div class="detail-3">
                                     <h6>Quantity: {{ $item['quantity'] }}</h6>
                                 </div>
                                 <div class="detail-4">
-                                    <h6>Price: RM   {{ $item['price'] }}</h6>
+                                    <h6>Price: RP   {{ $item['price'] }}</h6>
                                 </div>
                             </div> 
                         </div>
