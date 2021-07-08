@@ -5,7 +5,7 @@
 <div class="container p-0 show">
    <div class="row sixtyvh">
        <div class="col-6 d-flex flex-column align-items-center">
-            <img height="300px" src="{{ asset('/photo/'.$product->image) }}" alt="">
+            <img height="300px" src="{{ asset('/storage/products/'.$product->image) }}" alt="">
        </div>
        <div class="col-lg-4 col-sm-12 pl-5 pr-5">
         <h6><strong>{{ $product->brand }}</strong></h6>
