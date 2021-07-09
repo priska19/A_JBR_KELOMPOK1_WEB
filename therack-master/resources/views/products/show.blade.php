@@ -8,8 +8,8 @@
             <img height="300px" src="{{ asset('/storage/products/'.$product->image) }}" alt="">
        </div>
        <div class="col-lg-4 col-sm-12 pl-5 pr-5">
-        <h6><strong>{{ $product->brand }}</strong></h6>
-        <h5>{{ $product->name }}</h5>
+        <h5><strong>{{ $product->name }}</strong></h5>
+        <h6>RP. {{ $product->price }}</h6>
             <div class="card">
                 <div class="card-body">
                     <div class="show-info">
