@@ -13,11 +13,6 @@ class tambahuserController extends Controller
     {
         return view('admin.tambahuser');
     }
-    public function create()
-    {
-        $add_user = DB::table('users')->get();
-        return view('admin.addproduct');
-    }
 
     protected function validator(array $request)
     {

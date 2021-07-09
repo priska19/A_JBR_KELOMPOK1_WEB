@@ -32,4 +32,8 @@ Route::group(['namespace'=>'backend'], function(){
     Route::get('api_profile/{id}', 'ApiProfileController@getProfile');
     Route::put('api_profile/{id}', 'ApiProfileController@updateProfile');
     
+    Route::get('api_checkout', 'ApiCheckoutController@getAll');
+    Route::get('api_checkout/{id}','ApiCheckoutController@getOrder');
+    Route::post('api_checkout', 'ApiCheckoutController@createUser');
+
 });

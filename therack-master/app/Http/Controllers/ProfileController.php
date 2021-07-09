@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 use App\User;
 use Illuminate\Http\Request;
+use Auth;
 
 class ProfileController extends Controller
 {
@@ -26,6 +27,13 @@ class ProfileController extends Controller
         auth()->user()->profile->update($data);
         auth()->user()->update($name);
 
-        return redirect("/");
+        if (Auth::user()->role == 'Admin') {
+            return redirect()->route('admin.index')->with('success','Successfully edited the profile!');
+        }
+        else {
+            return redirect("/");
+        }
+
+        //return redirect("/");
     }
 }
