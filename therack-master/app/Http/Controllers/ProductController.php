@@ -167,7 +167,11 @@ class ProductController extends Controller
         ]);
         if(request('image'))
         {
-            $imagepath = $request->image->store('products','public');
+            //$imagepath = $request->image->store('products','public');
+            $image = $request->file('image');
+            $newFileName = $image->getClientOriginalName();
+            $image->storeAs('public/products/', $newFileName);
+
             $product = Product::findOrFail($id);
             
             $product->name=request('name');
@@ -176,7 +180,7 @@ class ProductController extends Controller
             //$product->gender=request('gender');
             $product->category=request('category');
             $product->stock=request('stock');
-            $product->image=$imagepath;
+            $product->image=$newFileName;
             $product->save();
         }
         else
