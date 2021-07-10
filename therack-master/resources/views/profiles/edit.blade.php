@@ -4,7 +4,7 @@
 <div class="container sixtyvh">
     <form method="POST" action="{{ route('profile.update',['user'])  }}" enctype="multipart/form-data">
         @csrf
-        @method('PATCH')
+        @method('PUT')
 
         <div class="row">
             

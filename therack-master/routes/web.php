@@ -57,6 +57,6 @@ Route::post('/checkout','CheckoutController@checkout')->name('checkout')->middle
 Route::get('/user/order','OrderController@show')->name('order.show')->middleware('auth');
 
 Route::get('/profile/{user}/edit','ProfileController@edit')->name('profile.edit')->middleware('auth');
-Route::patch('/profile/{user}','ProfileController@update')->name('profile.update')->middleware('auth');
+Route::put('/profile/{user}','ProfileController@update')->name('profile.update')->middleware('auth');
 
 Auth::routes();
