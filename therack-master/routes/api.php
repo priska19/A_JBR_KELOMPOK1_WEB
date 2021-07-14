@@ -35,5 +35,19 @@ Route::group(['namespace'=>'backend'], function(){
     Route::get('api_checkout', 'ApiCheckoutController@getAll');
     Route::get('api_checkout/{id}','ApiCheckoutController@getOrder');
     Route::post('api_checkout', 'ApiCheckoutController@createUser');
+});
+Route::post('/login', 'Api\AuthController@login')->name('auth.login');
 
+Route::group([
+    'previx'=>'auth'
+], function(){
+    Route::post('/login', 'Api\AuthController@login')->name('auth.login');
+    Route::post('/signup', 'Api\AuthController@signup')->name('auth.signup');
+
+Route::group([
+    'middleware'=>'auth:api'
+], function(){
+    Route::get('/logout', 'Api\AuthController@logout')->name('auth.logout');
+    Route::get('/user', 'Api\AuthController@user')->name('auth.user');
+    });   
 });
