@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
+use App\User;
 use DB;
 
 
@@ -24,14 +25,20 @@ class tambahuserController extends Controller
     }
 
     public function store(Request $request){
-    
-        DB::table('users')->insert([
-            'name'=>$request->name,
-            'email'=>$request->email,
-            'password'=>Hash::make($request->password),
-            'role' => 'Admin',
-            ]);
+        $user = new User;
+        //$user->id = $request->id;
+        $user->name = $request->name;
+        $user->email = $request->email;
+        $user->password = Hash::make($request->password);
+        $user->role = 'Admin';
+        $user->save();
         
+        $id = $user->id;
+
+        DB::table('profiles')->insert([
+            'user_id'=>$id,
+            ]);
+
         return redirect()->route('admin.user')->with('success','Successfully added the user!');
     }
 }
