@@ -12,12 +12,20 @@ class ApiProductController extends Controller
 {
     public function getAll(){
         $product = DB::table('products')->get();
-        return Response::json($product, 201);
+        return response()->json([
+            'success'=>true,
+            'message'=>"data berhasil didapat",
+            'produk'=> $product
+        ]);
     }
 
     public function getProd($id){
         $product = DB::table('products')->where('id',$id)->get();
-        return Response::json($product, 201);
+        return response()->json([
+            'success'=>true,
+            'message'=>"data berhasil didapat",
+            'produk'=> $product
+        ]);
     }
 
     // public function createProd(request $request){
